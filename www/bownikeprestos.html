@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>Off-white Nike Prestos 2.0</title>
+  <link rel="stylesheet" type="text/css" href="css/info.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <div class="fixed">
+   <ul>
+   <li><a href="homepage.html"><i class="fa fa-home" style="font-size:48px;color:white;"></i></a></li>
+   <li><a href="search.html"><i class="fa fa-search" style="font-size:48px;color:white;"></i></a></li>
+   <li><a href="howto.html"><i class="fa fa-question" style="font-size:48px;color:white;"></i></a></li>
+   <li><a href="account.html"><i class="fa fa-user" style="font-size:48px;color:white;"></i></a></li>
+   </ul>
+  </div>
+
+  <a href="homepage.html"><i class="fa fa-arrow-circle-left" style="font-size:48px;color:red;"></i></a>
+  <br>
+
+  <body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="img/1bownikeprestos.png" alt="Off-white Nike Prestos 2.0" class="center">
+</div>
+
+<div class="mySlides fade">
+  <img src="img/2bownikeprestos.png" alt="Off-white Nike Prestos 2.0" class="center">
+</div>
+
+<div class="mySlides fade">
+  <img src="img/3bownikeprestos.png" alt="Off-white Nike Prestos 2.0" class="center">
+</div>
+
+<div class="mySlides fade">
+  <img src="img/4bownikeprestos.jpg" alt="Off-white Nike Prestos 2.0" class="center">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div><br>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+    <p><b>Release Date:</b> 07/27/2018</p>
+    <p><b>Color:</b> Black</p>
+    <p><b>Brand:</b> Nike/Off-white</p>
+    <p><b>Retail Price:</b> $160</p>
+    <p><b>Story:</b> Nike and Virgil Abloh reissue The Ten: Air Presto x Off-White in
+       striking monochrome. This maximalist take on the early 2000s icon features additional
+       design elements jammed right back into the cage and across the heel, all the while
+       maintaining the characteristic t-shirt-like fit. </p>
+
+    <form action="/action_page.php">
+  <select name="size">
+    <option value="6">6</option>
+    <option value="6.5">6.5</option>
+    <option value="7">7</option>
+    <option value="7.5">7.5</option>
+    <option value="8">8</option>
+    <option value="8.5">8.5</option>
+    <option value="9">9</option>
+    <option value="9.5">9.5</option>
+    <option value="10">10</option>
+    <option value="10.5">10.5</option>
+    <option value="11">11</option>
+    <option value="11.5">11.5</option>
+    <option value="12">12</option>
+    <option value="12.5">12.5</option>
+    <option value="13">13</option>
+    <option value="13.5">13.5</option>
+    <option value="14">14</option>
+    <option value="14.5">14.5</option>
+    <option value="15">15</option>
+    <option value="15.5">15.5</option>
+    <option value="16">16</option>
+
+  </select>
+  <br><br>
+  <input type="submit">
+</form>
+
+<br><br><br><br><br>
+</body>
+</html>

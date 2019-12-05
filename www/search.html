@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>Search</title>
+  <link rel="stylesheet" type="text/css" href="css/search.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <div class="fixed">
+    <ul>
+      <li><a href="homepage.html"><i class="fa fa-home" style="font-size:48px;color:white;"></i></a></li>
+      <li><a href="search.html"><i class="fa fa-search" style="font-size:48px;color:white;"></i></a></li>
+      <li><a href="howto.html"><i class="fa fa-question" style="font-size:48px;color:white;"></i></a></li>
+      <li><a href="account.html"><i class="fa fa-user" style="font-size:48px;color:white;"></i></a></li>
+    </ul>
+  </div>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search...">
+
+<ul id="myUL">
+  <li brand="adidas" brand="yeezy" color="red" color="black"><a href="yeezy350v2.html"><img src="img/yeezy350v2.png" alt="Yeezy 350 V2">  Yeezy 350 V2</a></li>
+  <li brand="nike" brand="travis scott" color="sail"><a href="stravisscottaf1.html"><img src="img/travisaf1.png" alt="Travis Scott AF1">  Travis Scott Air Force 1</a></li>
+  <li brand="adidas" brand="kith" color="multicolor"><a href="akith4d.html"><img src="img/kith4d.png" alt="Kith 4D">  Kith 4D</a></li>
+  <li brand="nike" brand="parra" color="pink" color="white" color="blue"><a href="aam1parra.html"><img src="img/airmaxparra.png" alt="Air Max 1 Parra">  Air Max 1 Parra</a></li>
+  <li brand="nike" brand="off-white" color="black"><a href="bownikeprestos.html"><img src="img/owblackprestos.png" alt="Off-white Black Prestos">  Off-white Nike Prestos 2.0</a></li>
+  <li brand="revenge storm" color="red" color="orange"><a href="rfrevengestorm.html"><img src="img/revengestorm.png" alt="Revenge Storm">  Revenge Storm</a></li>
+  <li brand="nike" brand="off-white" color="transparent"><a href="owconverse.html"><img src="img/owconverse.png" alt="Off-white converse chuck">  Off-white Converse Chuck 70s</a></li>
+  <li brand="nike" brand="off-white" color="yellow" color="teal"><a href="yownikeblazers.html"><img src="img/owyellowblazers.png" alt="Off-white Nike Blazers 2.0">  Off-white Nike Blazer 2.0 All Hallows Eve </a></li>
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+<br><br><br><br>
+</body>
+</html>

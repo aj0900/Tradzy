@@ -1,0 +1,63 @@
+
+table {
+        border-collapse: collapse;
+        border-bottom: 1px solid red;
+        width: 100%;
+}
+
+td {
+    text-align: center;
+    border-bottom: 1px solid red;
+    color: red;
+    padding: 10px;
+}
+
+img {
+      width: 130px;
+      height: 90px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding-left: 30px;
+    display: inline;
+}
+
+div.fixed {
+            background-color: red;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            border: 1px solid red;
+}
+
+a:link {
+        text-decoration: none;
+        color: red;
+}
+
+a:visited {
+            text-decoration: none;
+            color: red;
+}
+
+a:hover {
+          text-decoration: none;
+          color: red;
+}
+
+a:active {
+          text-decoration: none;
+          color: red;
+}
+
+h3 {
+    text-align: right;
+    color: red
+}

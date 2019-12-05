@@ -1,0 +1,15 @@
+
+
+body {}
+
+h2 {text-align: center; color: red;}
+
+.center {display: block;
+         margin-left: auto;
+         margin-right: auto;
+         width: 20%;}
+
+img {width: 200px;
+     height: 180px;
+     width: auto;
+     height: auto}
